@@ -1,0 +1,422 @@
+[
+    {
+        "name": "Nike Air Max 270",
+        "image": "https://i.ibb.co/rtMs2Pm/shoe1.jpg",
+        "description": "Nike's Air Max 270 offers unparalleled comfort with a sleek design.",
+        "price": 150.00,
+        "category": "Shoes",
+        "brand": "Nike",
+        "ratings": 4.7,
+        "creationDate": "2024-08-01T08:00:00Z"
+    },
+    {
+        "name": "Adidas Ultraboost 22",
+        "image": "https://i.ibb.co/z8JbS23/shoe2.jpg",
+        "description": "Adidas's top running shoe featuring Boost cushioning for high energy return.",
+        "price": 180.00,
+        "category": "Shoes",
+        "brand": "Adidas",
+        "ratings": 4.8,
+        "creationDate": "2024-08-02T09:00:00Z"
+    },
+    {
+        "name": "Puma RS-X3",
+        "image": " https://i.ibb.co/xDZ8gmx/shoe3.jpg",
+        "description": "Puma RS-X3 with bold design and cushioned sole for all-day comfort.",
+        "price": 130.00,
+        "category": "Shoes",
+        "brand": "Puma",
+        "ratings": 4.6,
+        "creationDate": "2024-08-03T10:00:00Z"
+    },
+    {
+        "name": "Reebok Classic Leather",
+        "image": "https://i.ibb.co/HqMzFQk/shoe8.jpg",
+        "description": "Reebok Classic Leather with timeless style and supportive fit.",
+        "price": 110.00,
+        "category": "Shoes",
+        "brand": "Reebok",
+        "ratings": 4.5,
+        "creationDate": "2024-08-04T11:00:00Z"
+    },
+    {
+        "name": "New Balance 990v5",
+        "image": "https://i.ibb.co/TKPxzDT/shoe4.jpg",
+        "description": "New Balance 990v5 offers superior cushioning and stability.",
+        "price": 185.00,
+        "category": "Shoes",
+        "brand": "New Balance",
+        "ratings": 4.7,
+        "creationDate": "2024-08-05T12:00:00Z"
+    },
+    {
+        "name": "Converse Chuck Taylor All Star",
+        "image": "https://i.ibb.co/6X0RKHB/shoe9.jpg",
+        "description": "Classic Converse Chuck Taylor All Star for a timeless look.",
+        "price": 60.00,
+        "category": "Shoes",
+        "brand": "Converse",
+        "ratings": 4.4,
+        "creationDate": "2024-08-06T13:00:00Z"
+    },
+    {
+        "name": "Asics Gel-Kayano 28",
+        "image": "https://i.ibb.co/xq0BD9N/shoe10.jpg",
+        "description": "Asics Gel-Kayano 28 with advanced support and cushioning for long-distance runs.",
+        "price": 160.00,
+        "category": "Shoes",
+        "brand": "Asics",
+        "ratings": 4.8,
+        "creationDate": "2024-08-07T14:00:00Z"
+    },
+    {
+        "name": "Under Armour HOVR Phantom",
+        "image": "https://i.ibb.co/RB6TsLv/shoe5.jpg",
+        "description": "Under Armour HOVR Phantom with responsive cushioning and sleek design.",
+        "price": 140.00,
+        "category": "Shoes",
+        "brand": "Under Armour",
+        "ratings": 4.6,
+        "creationDate": "2024-08-08T15:00:00Z"
+    },
+    {
+        "name": "Fila Disruptor 2",
+        "image": "https://i.ibb.co/BnYwcHY/shoe7.jpg",
+        "description": "Fila Disruptor 2 with chunky sole and retro style.",
+        "price": 100.00,
+        "category": "Shoes",
+        "brand": "Fila",
+        "ratings": 4.5,
+        "creationDate": "2024-08-09T16:00:00Z"
+    },
+    {
+        "name": "Skechers Go Run 7",
+        "image": "https://i.ibb.co/68nvhd4/shoe6.jpg",
+        "description": "Skechers Go Run 7 with lightweight design and cushioned sole.",
+        "price": 120.00,
+        "category": "Shoes",
+        "brand": "Skechers",
+        "ratings": 4.7,
+        "creationDate": "2024-08-10T17:00:00Z"
+    },
+    {
+        "name": "Salomon Speedcross 5",
+        "image": "https://i.ibb.co/6X0RKHB/shoe9.jpg",
+        "description": "Salomon Speedcross 5 for rugged terrain with excellent grip and support.",
+        "price": 140.00,
+        "category": "Shoes",
+        "brand": "Salomon",
+        "ratings": 4.8,
+        "creationDate": "2024-08-11T18:00:00Z"
+    },
+    {
+        "name": "Nike Dri-FIT T-Shirt",
+        "image": "https://via.placeholder.com/150",
+        "description": "Nike Dri-FIT T-Shirt for breathable comfort and moisture-wicking performance.",
+        "price": 35.00,
+        "category": "T-Shirts",
+        "brand": "Nike",
+        "ratings": 4.7,
+        "creationDate": "2024-08-12T09:00:00Z"
+    },
+    {
+        "name": "Nike Dri-FIT T-Shirt",
+        "image": "https://i.ibb.co/hf8r396/t-shart1.jpg",
+        "description": "Nike Dri-FIT T-Shirt for breathable comfort and moisture-wicking performance.",
+        "price": 35.00,
+        "category": "T-Shirts",
+        "brand": "Nike",
+        "ratings": 4.7,
+        "creationDate": "2024-08-12T09:00:00Z"
+    },
+    {
+        "name": "Adidas Essentials Tee",
+        "image": "https://i.ibb.co/gDyjwLw/t-shart2.jpg",
+        "description": "Adidas Essentials Tee with soft cotton and classic design.",
+        "price": 30.00,
+        "category": "T-Shirts",
+        "brand": "Adidas",
+        "ratings": 4.6,
+        "creationDate": "2024-08-13T10:00:00Z"
+    },
+    {
+        "name": "Puma Graphic Tee",
+        "image": "https://i.ibb.co/xMpXPFc/t-shart3.jpg",
+        "description": "Puma Graphic Tee with bold print and comfortable fit.",
+        "price": 28.00,
+        "category": "T-Shirts",
+        "brand": "Puma",
+        "ratings": 4.5,
+        "creationDate": "2024-08-14T11:00:00Z"
+    },
+    {
+        "name": "Reebok Workout Ready",
+        "image": "https://i.ibb.co/RStcJr3/t-shart4.jpg",
+        "description": "Reebok Workout Ready T-Shirt with moisture-wicking technology.",
+        "price": 32.00,
+        "category": "T-Shirts",
+        "brand": "Reebok",
+        "ratings": 4.7,
+        "creationDate": "2024-08-15T12:00:00Z"
+    },
+    {
+        "name": "New Balance Athletic Tee",
+        "image": "https://i.ibb.co/sq7jGLh/t-shart5.jpg",
+        "description": "New Balance Athletic Tee designed for comfort and performance.",
+        "price": 34.00,
+        "category": "T-Shirts",
+        "brand": "New Balance",
+        "ratings": 4.6,
+        "creationDate": "2024-08-16T13:00:00Z"
+    },
+    {
+        "name": "Converse Chuck Patch",
+        "image": "https://i.ibb.co/5cMBRH7/t-shart6.jpg",
+        "description": "Converse Chuck Patch Tee with iconic logo and casual style.",
+        "price": 25.00,
+        "category": "T-Shirts",
+        "brand": "Converse",
+        "ratings": 4.4,
+        "creationDate": "2024-08-17T14:00:00Z"
+    },
+    {
+        "name": "Asics Running Tee",
+        "image": "https://i.ibb.co/1mSP6HQ/t-shart7.jpg",
+        "description": "Asics Running Tee for lightweight comfort and breathability.",
+        "price": 33.00,
+        "category": "T-Shirts",
+        "brand": "Asics",
+        "ratings": 4.8,
+        "creationDate": "2024-08-18T15:00:00Z"
+    },
+    {
+        "name": "Under Armour Tech 2.0",
+        "image": "https://i.ibb.co/hBNVSBK/t-shart8.jpg",
+        "description": "Under Armour Tech 2.0 T-Shirt with a soft feel and excellent moisture management.",
+        "price": 36.00,
+        "category": "T-Shirts",
+        "brand": "Under Armour",
+        "ratings": 4.7,
+        "creationDate": "2024-08-19T16:00:00Z"
+    },
+    {
+        "name": "Fila Essential Tee",
+        "image": "https://i.ibb.co/V96ySJd/t-shart9.jpg",
+        "description": "Fila Essential Tee with classic fit and comfortable fabric.",
+        "price": 29.00,
+        "category": "T-Shirts",
+        "brand": "Fila",
+        "ratings": 4.5,
+        "creationDate": "2024-08-20T17:00:00Z"
+    },
+    {
+        "name": "Skechers Performance Tee",
+        "image": "https://i.ibb.co/bX12snR/t-shart10.jpg",
+        "description": "Skechers Performance Tee designed for active use with moisture-wicking fabric.",
+        "price": 31.00,
+        "category": "T-Shirts",
+        "brand": "Skechers",
+        "ratings": 4.6,
+        "creationDate": "2024-08-21T18:00:00Z"
+    },
+    {
+        "name": "Royal Enfield Meteor Stellar",
+        "image": "https://i.ibb.co/WybJ3Vf/bike6.jpg",
+        "description": "Royal Enfield Meteor Stellar with a luxurious design and advanced features.",
+        "price": 4800.00,
+        "category": "Bikes",
+        "brand": "Royal Enfield",
+        "ratings": 4.7,
+        "creationDate": "2024-08-20T13:00:00Z"
+    },
+    {
+        "name": "Royal Enfield Himalayan Black",
+        "image": "https://i.ibb.co/1Tj3mpm/bike7.jpg",
+        "description": "Royal Enfield Himalayan Black edition with enhanced durability and style.",
+        "price": 6400.00,
+        "category": "Bikes",
+        "brand": "Royal Enfield",
+        "ratings": 4.8,
+        "creationDate": "2024-08-21T14:00:00Z"
+    },
+    {
+        "name": "Royal Enfield Interceptor 650 Standard",
+        "image": "https://i.ibb.co/crJHSzd/bike8.jpg",
+        "description": "Royal Enfield Interceptor 650 Standard with classic design and robust engine.",
+        "price": 7100.00,
+        "category": "Bikes",
+        "brand": "Royal Enfield",
+        "ratings": 4.7,
+        "creationDate": "2024-08-22T15:00:00Z"
+    },
+    {
+        "name": "Royal Enfield Classic Chrome",
+        "image": "https://i.ibb.co/Vgw5vYQ/bike9.jpg",
+        "description": "Royal Enfield Classic Chrome with a sleek chrome finish and powerful performance.",
+        "price": 4500.00,
+        "category": "Bikes",
+        "brand": "Royal Enfield",
+        "ratings": 4.6,
+        "creationDate": "2024-08-23T16:00:00Z"
+    },
+    {
+        "name": "Royal Enfield Bullet Desert Storm",
+        "image": "https://i.ibb.co/tmnRBKx/bike10.jpg",
+        "description": "Royal Enfield Bullet Desert Storm with military-inspired design and sturdy build.",
+        "price": 4300.00,
+        "category": "Bikes",
+        "brand": "Royal Enfield",
+        "ratings": 4.7,
+        "creationDate": "2024-08-24T17:00:00Z"
+    },
+    {
+        "name": "Royal Enfield Meteor Stellar Red",
+        "image": "https://i.ibb.co/qDz8xQQ/bike4.jpg",
+        "description": "Royal Enfield Meteor Stellar Red with premium features and dynamic performance.",
+        "price": 4900.00,
+        "category": "Bikes",
+        "brand": "Royal Enfield",
+        "ratings": 4.8,
+        "creationDate": "2024-08-25T18:00:00Z"
+    },
+    {
+        "name": "Royal Enfield Classic Signals Desert Storm",
+        "image": "https://i.ibb.co/Vgw5vYQ/bike9.jpg",
+        "description": "Royal Enfield Classic Signals Desert Storm with rugged military styling.",
+        "price": 4600.00,
+        "category": "Bikes",
+        "brand": "Royal Enfield",
+        "ratings": 4.6,
+        "creationDate": "2024-08-26T19:00:00Z"
+    },
+    {
+        "name": "Royal Enfield Interceptor 650 Vintage",
+        "image": "https://i.ibb.co/WybJ3Vf/bike6.jpg",
+        "description": "Royal Enfield Interceptor 650 Vintage with classic looks and high performance.",
+        "price": 7300.00,
+        "category": "Bikes",
+        "brand": "Royal Enfield",
+        "ratings": 4.7,
+        "creationDate": "2024-08-27T20:00:00Z"
+    },
+    {
+        "name": "Royal Enfield Himalayan Ice Queen",
+        "image": "https://i.ibb.co/qDz8xQQ/bike4.jpg",
+        "description": "Royal Enfield Himalayan Ice Queen with unique styling and off-road capability.",
+        "price": 6500.00,
+        "category": "Bikes",
+        "brand": "Royal Enfield",
+        "ratings": 4.8,
+        "creationDate": "2024-08-28T21:00:00Z"
+    },
+    {
+        "name": "Yamaha Meteor 350 Fireball",
+        "image": "https://i.ibb.co/tHmwMGh/bike5.jpg",
+        "description": "Yamaha Meteor 350 Fireball with a bold design and modern features.",
+        "price": 4700.00,
+        "category": "Bikes",
+        "brand": "Yamaha",
+        "ratings": 4.6,
+        "creationDate": "2024-08-29T22:00:00Z"
+    },
+    {
+        "name": "Levi's 501 Original Fit Jeans",
+        "image": "https://i.ibb.co/7vxGHD0/pant1.jpg",
+        "description": "Classic Levi's 501 jeans with a straight leg and button fly.",
+        "price": 60.00,
+        "category": "Pants",
+        "brand": "Levi's",
+        "ratings": 4.7,
+        "creationDate": "2024-08-30T08:00:00Z"
+    },
+    {
+        "name": "Nike Flex Men's Pants",
+        "image": "https://i.ibb.co/XxPwhMw/pant2.jpg",
+        "description": "Nike Flex pants for ultimate comfort and mobility.",
+        "price": 70.00,
+        "category": "Pants",
+        "brand": "Nike",
+        "ratings": 4.6,
+        "creationDate": "2024-08-31T09:00:00Z"
+    },
+    {
+        "name": "Adidas Essentials 3-Stripes Pants",
+        "image": "https://i.ibb.co/54Zbq70/pant3.jpg",
+        "description": "Adidas Essentials pants with iconic 3-Stripes design.",
+        "price": 65.00,
+        "category": "Pants",
+        "brand": "Adidas",
+        "ratings": 4.7,
+        "creationDate": "2024-09-01T10:00:00Z"
+    },
+    {
+        "name": "Gap Slim Fit Chinos",
+        "image": "https://i.ibb.co/DKysqn1/pant4.jpg",
+        "description": "Gap Slim Fit chinos with a clean, versatile look.",
+        "price": 55.00,
+        "category": "Pants",
+        "brand": "Gap",
+        "ratings": 4.5,
+        "creationDate": "2024-09-02T11:00:00Z"
+    },
+    {
+        "name": "Ralph Lauren Classic Fit Trousers",
+        "image": "https://i.ibb.co/KxzSVFS/pant5.jpg",
+        "description": "Ralph Lauren Classic Fit trousers with a timeless design.",
+        "price": 90.00,
+        "category": "Pants",
+        "brand": "Ralph Lauren",
+        "ratings": 4.8,
+        "creationDate": "2024-09-03T12:00:00Z"
+    },
+    {
+        "name": "H&M Casual Joggers",
+        "image": "https://i.ibb.co/SyKtgHJ/pant6.jpg",
+        "description": "H&M Casual Joggers with a relaxed fit and comfortable fabric.",
+        "price": 45.00,
+        "category": "Pants",
+        "brand": "H&M",
+        "ratings": 4.6,
+        "creationDate": "2024-09-04T13:00:00Z"
+    },
+    {
+        "name": "Uniqlo Easy Care Pants",
+        "image": "https://i.ibb.co/R75k8bC/pant7.jpg",
+        "description": "Uniqlo Easy Care pants with wrinkle-resistant fabric.",
+        "price": 50.00,
+        "category": "Pants",
+        "brand": "Uniqlo",
+        "ratings": 4.7,
+        "creationDate": "2024-09-05T14:00:00Z"
+    },
+    {
+        "name": "Tommy Hilfiger Slim Fit Jeans",
+        "image": "https://i.ibb.co/JkbpH8y/pant8.jpg",
+        "description": "Tommy Hilfiger Slim Fit jeans with a modern silhouette.",
+        "price": 80.00,
+        "category": "Pants",
+        "brand": "Tommy Hilfiger",
+        "ratings": 4.7,
+        "creationDate": "2024-09-06T15:00:00Z"
+    },
+    {
+        "name": "Wrangler Authentics Classic Cargo Pants",
+        "image": "https://i.ibb.co/k86B9db/pant9.jpg",
+        "description": "Wrangler Authentics cargo pants with multiple pockets and durable fabric.",
+        "price": 55.00,
+        "category": "Pants",
+        "brand": "Wrangler",
+        "ratings": 4.6,
+        "creationDate": "2024-09-07T16:00:00Z"
+    },
+    {
+        "name": "Dockers Alpha Khaki Pants",
+        "image": "https://i.ibb.co/VN9FRqW/pant10.jpg",
+        "description": "Dockers Alpha Khaki pants with a contemporary fit and design.",
+        "price": 60.00,
+        "category": "Pants",
+        "brand": "Dockers",
+        "ratings": 4.8,
+        "creationDate": "2024-09-08T17:00:00Z"
+    }
+]
