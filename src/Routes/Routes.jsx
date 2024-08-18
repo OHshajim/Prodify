@@ -3,6 +3,7 @@ import Layout from "../Layout/Layout";
 import Home from "../Pages/Home";
 import Login from "../Pages/Login";
 import Register from "../Pages/Register";
+import PrivetRoute from "./PrivetRoute";
 
 const Routes = createBrowserRouter([
   {
@@ -11,7 +12,11 @@ const Routes = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Home />,
+        element: (
+          <PrivetRoute>
+            <Home />
+          </PrivetRoute>
+        ),
       },
       {
         path: "/login",

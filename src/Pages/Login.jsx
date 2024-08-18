@@ -8,7 +8,6 @@ import Social from "../Shared/Social";
 
 const Login = () => {
   const { Login } = useContext(AuthContext);
-  const location = useLocation();
   const navigate = useNavigate();
   const [error, setError] = useState("");
 
@@ -24,7 +23,7 @@ const Login = () => {
         // Signed in
         const user = userCredential.user;
         console.log(user);
-        navigate(location?.state ? location.state : "/");
+        navigate("/");
         Swal.fire({
           title: "Successfully logged in",
           text: "Thank you for login ",

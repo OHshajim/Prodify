@@ -4,9 +4,9 @@ import { AuthContext } from "../Provider/AuthProvider";
 const Nav = () => {
   const { user, Logout } = useContext(AuthContext);
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar container mx-auto">
       <div className="flex-1">
-        <a className="btn btn-ghost text-xl">Prodify</a>
+        <a className="btn btn-ghost text-xl font-semibold">Prodify</a>
       </div>
       <div className="flex-none gap-5">
         <div className="navbar-end">

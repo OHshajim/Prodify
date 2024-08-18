@@ -1,15 +1,16 @@
 import Card from "../Components/Card";
 import { useQuery } from "@tanstack/react-query";
-import useAxios from "../Hooks/UseAxios";
 import axios from "axios";
 import { useForm } from "react-hook-form";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { FaArrowLeftLong, FaArrowRightLong } from "react-icons/fa6";
 import Loading from "../Components/Loading";
+import { AuthContext } from "../Provider/AuthProvider";
 const Home = () => {
+  const { user } = useContext(AuthContext);
   const { register, handleSubmit } = useForm();
-  let Sort = "",
-    search = " ";
+  const [search, setSearch] = useState("");
+  const [sort, setSort] = useState("");
   const [Category, setCategory] = useState("");
   const [MinPrice, setMinPrice] = useState("");
   const [MaxPrice, setMaxPrice] = useState("");
@@ -19,13 +20,15 @@ const Home = () => {
   const [count, setCount] = useState(null);
   useEffect(() => {
     const TotalProducts = async () => {
-      await axios.get("http://localhost:5000/totalProducts").then((res) => {
-        // console.log(res.data);
-        setCount(res.data);
-      });
+      await axios
+        .get("https://prodify-backend.vercel.app/totalProducts")
+        .then((res) => {
+          // console.log(res.data);
+          setCount(res.data);
+        });
     };
     TotalProducts();
-  }, [count]);
+  }, [user]);
 
   const [currentPage, setPage] = useState(0);
   const itemPerPage = 10;
@@ -39,17 +42,18 @@ const Home = () => {
   } = useQuery({
     queryKey: [
       "cards",
-      Sort,
+      sort,
       search,
       Category,
       MinPrice,
       MaxPrice,
       Brand,
       currentPage,
+      user,
     ],
     queryFn: async () => {
       const res = await axios.get(
-        `http://localhost:5000/products?search=${search}&&sortBy=${Sort}&&Brand=${Brand}&&Category=${Category}&&MinPrice=${MinPrice}&&MaxPrice=${MaxPrice}&&page=${currentPage}`
+        `https://prodify-backend.vercel.app/products?search=${search}&&sortBy=${sort}&&Brand=${Brand}&&Category=${Category}&&MinPrice=${MinPrice}&&MaxPrice=${MaxPrice}&&page=${currentPage}`
       );
       return res.data;
     },
@@ -57,19 +61,15 @@ const Home = () => {
 
   // search
   const handleSearch = (data) => {
-    search = data.search;
-    if (search === "") {
-      return refetch();
-    }
+    setSearch(data.search);
     refetch();
   };
 
   // sort
   const handleSort = (e) => {
-    const sort = e.target.value;
-    if (sort == 0) return;
-    Sort = sort;
-    console.log(Sort);
+    const Sort = e.target.value;
+    if (Sort == 0) return;
+    setSort(Sort);
     refetch();
   };
   // category
@@ -209,7 +209,7 @@ const Home = () => {
           <div className="flex justify-center">
             <Loading />
           </div>
-        ) : cards.length !== 0 ?(
+        ) : cards.length !== 0 ? (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mx-4">
             {cards.map((card) => (
               <div key={card._id} className="flex justify-center items-center">
@@ -217,7 +217,11 @@ const Home = () => {
               </div>
             ))}
           </div>
-        ): <p className="text-error font-semibold text-xl">Products are not available !!!</p>}
+        ) : (
+          <p className="text-error font-semibold text-xl">
+            Products are not available !!!
+          </p>
+        )}
       </div>
 
       {/* pagination */}

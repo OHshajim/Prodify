@@ -8,7 +8,6 @@ import Social from "../Shared/Social";
 
 const Register = () => {
   const { createUser } = useContext(AuthContext);
-  const location = useLocation();
   const navigate = useNavigate();
   const [error, setError] = useState("");
   const handleRegister = (event) => {
@@ -51,7 +50,7 @@ const Register = () => {
         })
           .then(() => {
             console.log(auth.currentUser);
-            navigate(location?.state ? location.state : "/");
+            navigate("/");
             Swal.fire({
               title: "Congratulations",
               text: "Successfully Registered",

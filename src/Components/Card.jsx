@@ -15,6 +15,7 @@ const Card = ({ card }) => {
             <div className="badge badge-outline text-blue-500">{card?.brand}</div>
             <div className="badge badge-outline gap-1 text-yellow-400">{card?.ratings} <TiStarFullOutline /></div>
             <div className="badge badge-outline text-green-500">{card?.price} $$</div>
+            <div className="badge badge-outline text-green-500">{card?.creationDate}</div>
           </div>
         </div>
       </div>
