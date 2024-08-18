@@ -1,31 +1,33 @@
 # Prodify
 
-Live Link : https://prodify-232d8.web.app/ 
+Live Link : https://prodify-232d8.web.app/
 
 Server Side Link : https://github.com/OHshajim/Prodify-server
+
 ## Description
 
-**Prodify** is a modern, responsive web application built with React and powered by Firebase for backend services. It provides an intuitive user interface with features like form handling, routing, and real-time data management.
+**Prodify**, This is a Fullstack MERN (MongoDB, Express.js, React.js, Node.js) project that implements product filtering functionalities including pagination, search, categorization, and sorting. The application allows users to filter products by name, category, brand, and price, and also includes Google Authentication and Email/Password Authentication using Firebase.
 
 ## Features
 
-- **React Router DOM:** For seamless client-side routing.
-- **Firebase Integration:** Authentication and Hosting.
-- **Form Handling:** Manage forms efficiently using React Hook Form.
-- **API Handling:** Axios for making HTTP requests.
-- **UI Components:** Styled with Tailwind CSS and DaisyUI.
-- **Notifications:** SweetAlert2 for beautiful alerts and popups.
-- **State Management:** React Query for server-state management.
+- **Pagination:** Efficient loading of products with page numbers and navigation buttons.
+- **Search:** Search products based on their name.
+- **Categorization:** Filter products by brand name, category name, and price range.
+- **Sorting:** Sort products by price (Low to High, High to Low) and date added (Newest first).
+- **Authentication:**
+  - Google Authentication using Firebase.
+  - Email and Password Authentication using Firebase.
+- **Responsive Design:** Fully responsive, mobile-first design with a clean UI.
+- **Product Details:** Each product includes a name, image, description, price, category, ratings, and creation date.
 
 ## Technology Stack
 
-- **Frontend:** React Js , Tailwind CSS, DaisyUI
-- **Backend:** Node Js , Express Js , MongoDB .
-- **State Management:** React Query
-- **Form Handling:** React Hook Form
-- **Routing:** React Router DOM
-- **HTTP Client:** Axios
-- **Alerts:** SweetAlert2
+- **Frontend:** React.js, Tailwind CSS ,DaisyUI
+- **Backend:** Node.js, Express.js, MongoDB
+- **Authentication:** Firebase Authentication (Google and Email/Password)
+- **Database:** MongoDB
+- **State Management:** React useState and useEffect hooks
+- **API Client:** Axios
 
 ## Installation
 
@@ -48,3 +50,8 @@ Server Side Link : https://github.com/OHshajim/Prodify-server
    VITE_FIREBASE_STORAGE_BUCKET=your_storage_bucket
    VITE_FIREBASE_MESSAGING_SENDER_ID=your_messaging_sender_id
    VITE_FIREBASE_APP_ID=your_app_id
+
+5. **Run the frontend server**
+   ```bash
+   npm run dev
+   ```
