@@ -213,7 +213,38 @@ const Home = () => {
         )}
       </div>
 
-
+      {/* pagination */}
+      <div className="flex items-center justify-between mt-6">
+        <button
+          onClick={handlePrev}
+          className="flex items-center px-5 py-2 text-sm text-gray-700 capitalize transition-colors duration-200 bg-white border rounded-md gap-x-2   hover:bg-blue-100/60 hover:text-blue-500"
+        >
+          <FaArrowLeftLong />
+          <span>previous</span>
+        </button>
+        <div className="items-center hidden lg:flex gap-x-3">
+          {pages.map((page) => (
+            <button
+              onClick={() => setPage(page)}
+              key={page}
+              className={`px-2 py-1 text-sm  rounded-md   ${
+                currentPage == page
+                  ? "text-blue-500 bg-blue-100/60"
+                  : "text-gray-500 bg-gray-100"
+              }`}
+            >
+              {page + 1}
+            </button>
+          ))}
+        </div>
+        <button
+          onClick={handleNext}
+          className="flex items-center px-5 py-2 text-sm text-gray-700 capitalize transition-colors duration-200 bg-white border rounded-md gap-x-2 hover:bg-blue-100/60 hover:text-blue-500"
+        >
+          Next
+          <FaArrowRightLong />
+        </button>
+      </div>
     </div>
   );
 };
