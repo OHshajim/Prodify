@@ -7,7 +7,7 @@ import { useState } from "react";
 const Home = () => {
   const { register, handleSubmit } = useForm();
   let search = " ";
-  const [sort, setSort] = useState("");
+  let Sort = "";
   const {
     data: cards = [],
     isPending: loading,
@@ -16,11 +16,13 @@ const Home = () => {
     queryKey: ["cards"],
     queryFn: async () => {
       const res = await axios.get(
-        `http://localhost:5000/products?search=${search}&&sortBy=${sort}`
+        `http://localhost:5000/products?search=${search}&&sortBy=${Sort}`
       );
       return res.data;
     },
   });
+
+  // search
   const handleSearch = (data) => {
     search = data.search;
     if (search === "") {
@@ -28,8 +30,18 @@ const Home = () => {
     }
     refetch();
   };
+
+  // sort
+  const handleSort = (e) => {
+    const sort = e.target.value;
+    if (sort == 0) return;
+    Sort = sort;
+    console.log(Sort);
+    refetch();
+  };
   return (
     <div>
+      {/* search */}
       <form onSubmit={handleSubmit(handleSearch)}>
         <div className="join flex justify-center">
           <input
@@ -48,6 +60,18 @@ const Home = () => {
         </div>
       </form>
 
+      {/* sort */}
+      <select
+        onChange={handleSort}
+        className="select select-bordered w-full max-w-xs"
+      >
+        <option disabled selected value={0}>
+          Sort by
+        </option>
+        <option value={"price:-1"}>Price : Hight to Low</option>
+        <option value={"price:1"}>Price : Low to Hight</option>
+        <option value={"date"}>Date</option>
+      </select>
       <h1 className="text-center font-semibold text-2xl my-10">Products</h1>
 
       <div>
