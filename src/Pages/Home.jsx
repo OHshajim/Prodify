@@ -1,6 +1,7 @@
 import Card from "../Components/Card";
 import axios from "axios";
 import { useQuery } from "@tanstack/react-query";
+import useAxios from "../Hooks/useAxios";
 
 const Home = () => {
   const { data: cards = [], isPending: loading } = useQuery({
