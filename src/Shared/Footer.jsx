@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
-    <div className=" bg-neutral text-neutral-content">
-      <footer className="footer p-10 container mx-auto justify-between">
+    <div className="text-neutral-content select-none"> 
+      <footer className="footer p-10 container mx-auto justify-between text-black">
         <aside >
           <h3 className="text-2xl font-bold"> Prodify Ltd.</h3>
           <p>Providing reliable tech since 1992</p>
@@ -56,7 +56,7 @@ const Footer = () => {
         <aside>
           <p>
             Copyright © {new Date().getFullYear()} - All right reserved by
-            Prodify Ltd
+            <span className="font-bold"> Prodify</span> Ltd
           </p>
         </aside>
       </footer>

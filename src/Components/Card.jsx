@@ -3,7 +3,7 @@ import { TiStarFullOutline } from "react-icons/ti";
 const Card = ({ card }) => {
   return (
     <div>
-      <div className="card bg-base-100 w-96 shadow-xl">
+      <div className="card shadow-xl">
         <figure>
           <img src={card?.image} alt={card?.name} />
         </figure>
