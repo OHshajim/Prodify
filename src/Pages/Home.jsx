@@ -5,6 +5,7 @@ import axios from "axios";
 import { useForm } from "react-hook-form";
 import { useEffect, useState } from "react";
 import { FaArrowLeftLong, FaArrowRightLong } from "react-icons/fa6";
+import Loading from "../Components/Loading";
 const Home = () => {
   const { register, handleSubmit } = useForm();
   let Sort = "",
@@ -113,8 +114,8 @@ const Home = () => {
   };
 
   return (
-    <div className="container mx-auto mt-10 mb-20">
-      <div className="flex justify-between my-5 ">
+    <div className="container mx-auto mt-10 mb-20 select-none">
+      <div className="flex justify-between my-5 gap-5 sm:flex-row flex-col">
         {/* search */}
         <form onSubmit={handleSubmit(handleSearch)}>
           <div className="join flex justify-center">
@@ -133,23 +134,25 @@ const Home = () => {
             </button>
           </div>
         </form>
-        {/* sort */}
-        <select
-          onChange={handleSort}
-          className="select select-bordered w-full max-w-xs rounded-full"
-        >
-          <option disabled selected value={0}>
-            Sort by
-          </option>
-          <option value={"price:-1"}>Price : Hight to Low</option>
-          <option value={"price:1"}>Price : Low to Hight</option>
-          <option value={"date"}>Date</option>
-        </select>
+        <div className="flex justify-center">
+          {/* sort */}
+          <select
+            onChange={handleSort}
+            className="select select-bordered w-full max-w-xs rounded-full"
+          >
+            <option disabled selected value={0}>
+              Sort by
+            </option>
+            <option value={"price:-1"}>Price : Hight to Low</option>
+            <option value={"price:1"}>Price : Low to Hight</option>
+            <option value={"date"}>Date</option>
+          </select>
+        </div>
       </div>
 
       {/* category */}
-      <div className="flex justify-between my-5">
-        <div className="mb-4">
+      <div className="grid md:grid-cols-3 w-full gap-4 md:my-5 my-1">
+        <div className="sm:mb-4 mb-1 flex md:justify-start justify-center">
           <select
             className="select select-bordered w-full max-w-xs rounded-full"
             onChange={handleBrand}
@@ -163,7 +166,7 @@ const Home = () => {
             <option value="Royal Enfield">Royal Enfield</option>
           </select>
         </div>
-        <div className="mb-4">
+        <div className="sm:mb-4 mb-1 flex justify-center">
           <select
             className="select select-bordered w-full max-w-xs rounded-full"
             onChange={handleCategory}
@@ -178,7 +181,7 @@ const Home = () => {
           </select>
         </div>
         {/* Price Range */}
-        <div className="mb-4 flex  gap-4">
+        <div className="sm:mb-4 mb-1 flex  gap-4">
           <input
             type="number"
             name="MinPrice"
@@ -197,24 +200,28 @@ const Home = () => {
           />
         </div>
       </div>
-      <h1 className="text-center font-semibold text-2xl my-10">Products</h1>
+      <h1 className="text-center font-semibold text-2xl my-4 sm:my-10">
+        Products
+      </h1>
 
       <div>
         {loading ? (
-          <></>
-        ) : (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="flex justify-center">
+            <Loading />
+          </div>
+        ) : cards.length !== 0 ?(
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mx-4">
             {cards.map((card) => (
               <div key={card._id} className="flex justify-center items-center">
                 <Card card={card} />
               </div>
             ))}
           </div>
-        )}
+        ): <p className="text-error font-semibold text-xl">Products are not available !!!</p>}
       </div>
 
       {/* pagination */}
-      <div className="flex items-center justify-between mt-6">
+      <div className="flex items-center justify-between mt-16">
         <button
           onClick={handlePrev}
           className="flex items-center px-5 py-2 text-sm text-gray-700 capitalize transition-colors duration-200 bg-white border rounded-md gap-x-2   hover:bg-blue-100/60 hover:text-blue-500"
