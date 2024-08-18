@@ -1,12 +1,13 @@
 import { useContext, useState } from "react";
-// import { AuthContext } from "../../Provider/AuthProvider";
-// import { updateProfile } from "firebase/auth";
-// import auth from "../../Firebase/Firebase.config";
+import { updateProfile } from "firebase/auth";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-// import Swal from "sweetalert2";
+import { AuthContext } from "../Provider/AuthProvider";
+import auth from "../../Firebase/firebase.config";
+import Swal from "sweetalert2";
+import Social from "../Shared/Social";
 
 const Register = () => {
-//   const { createUser } = useContext(AuthContext);
+  const { createUser } = useContext(AuthContext);
   const location = useLocation();
   const navigate = useNavigate();
   const [error, setError] = useState("");
@@ -41,47 +42,47 @@ const Register = () => {
       setError("● password  Length must be at least 6 character");
       return;
     }
-    // createUser(email, password)
-    //   .then((user) => {
-    //     console.log(user);
-    //     updateProfile(auth.currentUser, {
-    //       displayName: `${name}`,
-    //       photoURL: `${photo}`,
-    //     })
-    //       .then(() => {
-    //         console.log(auth.currentUser);
-    //         navigate(location?.state ? location.state : "/");
-    //         Swal.fire({
-    //           title: "Congratulations",
-    //           text: "Successfully Registered",
-    //           icon: "success",
-    //           confirmButtonText: "close",
-    //         });
-    //       })
-    //       .catch((error) => {
-    //         // console.error(error);
-    //         Swal.fire({
-    //           title: "Error",
-    //           text: `${error.message}`,
-    //           icon: "error",
-    //           confirmButtonText: "close",
-    //         });
-    //       });
-    //   })
-    //   .catch((error) => {
-    //     console.error(error);
-    //     setError(error.message)
-    //     Swal.fire({
-    //         title: 'Error',
-    //         text: `${error.message}`,
-    //         icon: 'error',
-    //         confirmButtonText: 'close'
-    //     })
-    //   });
+    createUser(email, password)
+      .then((user) => {
+        console.log(user);
+        updateProfile(auth.currentUser, {
+          displayName: `${name}`,
+          photoURL: `${photo}`,
+        })
+          .then(() => {
+            console.log(auth.currentUser);
+            navigate(location?.state ? location.state : "/");
+            Swal.fire({
+              title: "Congratulations",
+              text: "Successfully Registered",
+              icon: "success",
+              confirmButtonText: "close",
+            });
+          })
+          .catch((error) => {
+            console.error(error);
+            Swal.fire({
+              title: "Error",
+              text: `${error.message}`,
+              icon: "error",
+              confirmButtonText: "close",
+            });
+          });
+      })
+      .catch((error) => {
+        console.error(error);
+        setError(error.message);
+        Swal.fire({
+          title: "Error",
+          text: `${error.message}`,
+          icon: "error",
+          confirmButtonText: "close",
+        });
+      });
   };
   return (
     <div>
-      <div >
+      <div>
         <div className=" flex-col container mx-auto py-10 px-5">
           <div className="mb-4">
             <h1 className="text-2xl md:text-3xl lg:text-5xl font-bold">
@@ -150,6 +151,7 @@ const Register = () => {
                 now
               </p>
             </form>
+            <Social />
           </div>
         </div>
       </div>

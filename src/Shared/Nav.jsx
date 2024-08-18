@@ -1,4 +1,8 @@
+import { useContext } from "react";
+import { AuthContext } from "../Provider/AuthProvider";
+
 const Nav = () => {
+  const { user, Logout } = useContext(AuthContext);
   return (
     <div className="navbar bg-base-100">
       <div className="flex-1">
@@ -6,7 +10,21 @@ const Nav = () => {
       </div>
       <div className="flex-none gap-5">
         <div className="navbar-end">
-          <a className="btn">Login</a>
+          {user ? (
+            <button
+              onClick={() => Logout()}
+              className="btn btn-outline btn-error"
+            >
+              Logout
+            </button>
+          ) : (
+            <a
+              className="btn btn-outline border-cyan-500 text-cyan-500"
+              href="/login"
+            >
+              Login
+            </a>
+          )}
         </div>
         <div
           tabIndex={0}
@@ -16,7 +34,10 @@ const Nav = () => {
           <div className="w-10 rounded-full">
             <img
               alt="Tailwind CSS Navbar component"
-              src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
+              src={
+                user?.photoURL ||
+                "https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
+              }
             />
           </div>
         </div>
