@@ -6,7 +6,7 @@ import { useForm } from "react-hook-form";
 import { useState } from "react";
 const Home = () => {
   const { register, handleSubmit } = useForm();
-  const [search, setSearch] = useState("");
+  let search = " ";
   const [sort, setSort] = useState("");
   const {
     data: cards = [],
@@ -15,21 +15,18 @@ const Home = () => {
   } = useQuery({
     queryKey: ["cards"],
     queryFn: async () => {
-      const res = await axios.get(`http://localhost:5000/products?search=${search}&&sortBy=${sort}`);
-      console.log(res);
+      const res = await axios.get(
+        `http://localhost:5000/products?search=${search}&&sortBy=${sort}`
+      );
       return res.data;
     },
   });
-  console.log(cards);
-
-  const handleSearch = async (data) => {
-    setSearch(data.search);
+  const handleSearch = (data) => {
+    search = data.search;
     if (search === "") {
-      refetch();
-      return;
+      return refetch();
     }
-    console.log(data);
-    return await refetch();
+    refetch();
   };
   return (
     <div>
@@ -37,6 +34,7 @@ const Home = () => {
         <div className="join flex justify-center">
           <input
             {...register("search")}
+            name="search"
             type="text"
             placeholder="Search products"
             className="input input-bordered join-item rounded-full"
